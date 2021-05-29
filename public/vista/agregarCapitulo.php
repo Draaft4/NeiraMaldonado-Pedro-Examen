@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agregar Capitulo</title>
     <link rel="stylesheet" href="../styles/stylesBox.css">
+    <script src="../../config/buscarAutor.js"></script>
 </head>
 <body>
 <div class="login">
@@ -37,6 +38,8 @@
         }
         echo'</select>';
     ?>
+    <input type="button" value="Buscar" onclick="buscarAutores()">
+    <div id="informacion"></div>
     <br>
     <br>
     <input type="submit" id="crear" name="crear" value="Aceptar" />
