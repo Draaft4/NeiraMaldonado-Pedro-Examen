@@ -1,4 +1,3 @@
-<!DOCTYPE html> 
 <html> 
     <head> 
         <meta charset="UTF-8"> 
@@ -8,8 +7,11 @@
         color: red; 
         } 
         </style> 
+        <link rel="stylesheet" href="../styles/stylesBox.css">
     </head> 
     <body> 
+    <div class="login">
+    <div class="login-form">
         <?php 
             //incluir conexión a la base de datos 
             include '../../config/conexionBD.php'; 
@@ -17,7 +19,7 @@
             $ISBN = isset($_POST["ISBN"]) ? trim($_POST["ISBN"]) : null; 
             $numPag = isset($_POST["numPag"]) ? trim($_POST["numPag"]) : null; 
             $sql = "INSERT INTO Libro VALUES (null, '$nombre',$ISBN,$numPag)"; 
-            echo $sql;
+            //echo $sql;
             if ($conn->query($sql) === TRUE) { 
                 echo "<p>Se ha creado los datos correctamemte!!!</p>"; 
                 echo "<a href='../vista/agregarCapitulo.php?ISBN=$ISBN'>Crear Capitulos</a>"; 
@@ -32,6 +34,8 @@
             $conn->close(); 
             
         ?> 
+        </div>
+    </div>
     </body> 
 </html>
 

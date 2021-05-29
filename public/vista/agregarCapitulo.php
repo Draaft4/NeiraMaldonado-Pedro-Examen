@@ -1,12 +1,17 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agregar Capitulo</title>
+    <link rel="stylesheet" href="../styles/stylesBox.css">
 </head>
 <body>
+<div class="login">
+    <div class="login-header">
+        <h1>Agregar Capitulo/h1>
+    </div>
+    <div class="login-form">
     <?php
     $ISBN = $_GET['ISBN'];
     echo 'Libro con codigo ISBN: '.$ISBN;
@@ -37,6 +42,7 @@
     <input type="submit" id="crear" name="crear" value="Aceptar" />
     <input type="reset" id="cancelar" name="cancelar" value="Cancelar" onclick="location.href='index.html'" />
     </form>
-    
+    </div>
+</div>
 </body>
 </html>

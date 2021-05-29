@@ -1,4 +1,3 @@
-<!DOCTYPE html> 
 <html> 
     <head> 
         <meta charset="UTF-8"> 
@@ -8,8 +7,11 @@
         color: red; 
         } 
         </style> 
+     <link rel="stylesheet" href="../styles/stylesBox.css">
     </head> 
     <body> 
+    <div class="login">
+    <div class="login-form">
         <?php 
             //incluir conexión a la base de datos 
             include '../../config/conexionBD.php'; 
@@ -49,6 +51,8 @@
             $conn->close(); 
             
         ?> 
+        </div>
+    </div>
     </body> 
 </html>
 
