@@ -9,7 +9,7 @@
 <body>
 <div class="login">
     <div class="login-header">
-        <h1>Agregar Capitulo/h1>
+        <h1>Agregar Capitulo</h1>
     </div>
     <div class="login-form">
     <?php
@@ -35,7 +35,7 @@
                echo '<option value="'.$row['aut_nombre'].'">'.$row['aut_nombre'].'</option>';
            }
         }
-        echo'</selector>';
+        echo'</select>';
     ?>
     <br>
     <br>

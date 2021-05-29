@@ -15,6 +15,8 @@ $verf = 0;
             $verf = 0;
         }
         if($verf==0){
+            echo "<p><b>Nombre del autor:</b> ".$row['aut_nombre']."</p>";
+            echo "<p><b>Nacionalidad del autor:</b> ".$row['aut_nacionalidad']."</p>";
             echo "<p><b>Titulo del Libro:</b> ".$row['lib_nombre']."</p>";
             echo "<p><b>Codigo ISBN:</b> ".$row['lib_ISBN']."</p>";
             echo "<p><b>Numero de paginas:</b> ".$row['lib_num_pag']."</p>";

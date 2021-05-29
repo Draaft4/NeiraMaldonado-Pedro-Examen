@@ -1,7 +1,7 @@
 function buscarAutores() {
     var autor = document.getElementById("autores").value;
-    console.log(autores)
-    if (autores == "") {
+    console.log(autor)
+    if (autor == "") {
         document.getElementById("informacion").innerHTML = "";
     } else {
         if (window.XMLHttpRequest) {
